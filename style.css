@@ -1,0 +1,146 @@
+body{
+    text-decoration: none;
+    background-size: cover;
+    background-color: #A9CDE2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    background-color: whitesmoke;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px #6A8695;
+    border-radius: 5px;
+    animation: zoom-in 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in{
+    0% {
+      transform: scale(0.2, 0.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+
+.titulo{
+    text-align: center;
+    font-size: 48px;
+}
+
+.caracteristicas{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #2f363d;
+
+}
+
+.sumario{
+    color: black;
+    cursor: pointer;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+    
+.inputComprimentoSenha{
+    width: 60px; 
+    height: 22px;
+    margin-left: 5px;
+    text-align: right; 
+    margin-left: 2px; 
+    border: none; 
+    border-radius: 4px;
+    background-color: #A9CDE2;
+    box-shadow: 0px 0px 5px #6A8695 inset;
+} 
+
+.btnGerar{
+    background-color: #239CE0;
+    box-shadow: 0px 0px 5px #6A8695;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.campoSenha{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputSenha{
+    width: 80%;
+    padding: 15px 20px;
+    border: none;
+    background-color: #A9CDE2;
+    box-shadow: 0px 0px 5px #6A8695 inset;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f363d;
+}
+
+.btnMostrar{
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 10px;
+    background: whitesmoke;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.btnMostrar:hover{
+    background-color: #DFDFDF;
+}
+
+.forca{
+    width: 88%;
+    margin-left: 6%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btnCopiar{
+    background-color: #4CAF50; 
+    box-shadow: 0px 0px 5px #6A8695;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: end;
+    margin-top: 19.6%;
+    color: #6A8695;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            Gerador de Senha
+        </div>  
+
+        <div class="corpo">
+            <details class="caracteristicas">
+                <summary class="sumario">
+                    Caracteristicas
+                </summary>
+                <div class="opcoes" id="opcoes">
+                    <div class="opcao" id="divComprimento">
+                        <p style="padding-bottom: 4 px;">Comprimento da Senha: </p>
+                        <input type="number" class="inputComprimentoSenha" value="0" id="comprimentoSenha"> 
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" style="width: 20px; height: 20px;" id="maiuscula">
+                        <p style="padding-bottom: 4px;">Letras Maisculas</p> 
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" style="width: 20px; height: 20px;" id="minuscula"> 
+                        <p style="padding-bottom: 4px;">Letras Minusculas</p>
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" style="width: 20px; height: 20px;" id="numero"> 
+                        <p style="padding-bottom: 4px;">Incluir Números</p>
+                    </div>
+                    <div class="opcao">
+                        <input type="checkbox" style="width: 20px; height: 20px;" id="simbolo"> 
+                        <p style="padding-bottom: 4px;">Incluir Simbolos</p>
+                    </div>
+                </div>
+                <button class="btnGerar" onclick="gerarSenha()">Gerar Senha</button>
+            </details>
+
+            <div class="campoSenha">
+                <input type="text" id="senha" class="inputSenha" disabled>
+                <button class="btnMostrar" onclick="mostraSenha()" id="btnMostrar">
+                    <img src="img/lock.svg">
+                </button>
+            </div>
+            <div class="forca" id="forca">
+                
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button id="" class="btnCopiar" onclick="copiarSenha()">Copiar Senha</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Magno Levi dos Santos - 20/09/2022
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
