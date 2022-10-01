@@ -35,7 +35,7 @@ function gerarSenha() {
 
             document.getElementById("senha").value = senha
             document.getElementById("btnMostrar").innerHTML = `<img src="img/lock.svg">`
-            //document.getElementById("senha").type = "password"
+            document.getElementById("senha").type = "password"
             flagMostraSenha = 0
             
             //MOSTRA FORÇA DA SENHA
